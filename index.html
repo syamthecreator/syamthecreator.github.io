@@ -20,11 +20,11 @@
   <link rel="stylesheet" href="style.css">
 
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-  (function () {
-    emailjs.init("XtLx0no2ve4RWAco-"); // NOT service ID
-  })();
-</script>
+  <script>
+    (function () {
+      emailjs.init("XtLx0no2ve4RWAco-"); // NOT service ID
+    })();
+  </script>
 
 </head>
 
@@ -105,59 +105,59 @@
   </header>
 
   <!-- MOBILE NAVIGATION -->
-<div class="mobile-nav" id="mobileNav">
-  <div class="mobile-nav-content">
-    <div class="mobile-nav-header">
-      <div class="logo">
-        <div class="logo-icon">
-          <i class='bx bxl-flutter'></i>
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-content">
+      <div class="mobile-nav-header">
+        <div class="logo">
+          <div class="logo-icon">
+            <i class='bx bxl-flutter'></i>
+          </div>
+          <div class="logo-text">
+            <span class="logo-primary">Syam</span>
+            <span class="logo-accent">Kumar</span>
+          </div>
         </div>
-        <div class="logo-text">
-          <span class="logo-primary">Syam</span>
-          <span class="logo-accent">Kumar</span>
-        </div>
+        <button class="close-menu" id="closeMenu">
+          <i class='bx bx-x'></i>
+        </button>
       </div>
-      <button class="close-menu" id="closeMenu">
-        <i class='bx bx-x'></i>
-      </button>
-    </div>
-    
-    <div class="mobile-nav-links">
-      <a href="#home" class="mobile-nav-link active" data-link="home">
-        <span class="link-number">01</span>
-        <span class="link-text">Home</span>
-        <i class='bx bx-chevron-right'></i>
-      </a>
-      <a href="#about" class="mobile-nav-link" data-link="about">
-        <span class="link-number">02</span>
-        <span class="link-text">About</span>
-        <i class='bx bx-chevron-right'></i>
-      </a>
-      <a href="#projects" class="mobile-nav-link" data-link="projects">
-        <span class="link-number">03</span>
-        <span class="link-text">Projects</span>
-        <i class='bx bx-chevron-right'></i>
-      </a>
-      <a href="#skills" class="mobile-nav-link" data-link="skills">
-        <span class="link-number">04</span>
-        <span class="link-text">Skills</span>
-        <i class='bx bx-chevron-right'></i>
-      </a>
-      <a href="#contact" class="mobile-nav-link" data-link="contact">
-        <span class="link-number">05</span>
-        <span class="link-text">Contact</span>
-        <i class='bx bx-chevron-right'></i>
-      </a>
-    </div>
-    
-    <div class="mobile-nav-footer">
-      <a class="btn-mobile-download" id="downloadResumeMobile">
-        <i class='bx bx-download'></i>
-        Download Resume
-      </a>
+
+      <div class="mobile-nav-links">
+        <a href="#home" class="mobile-nav-link active" data-link="home">
+          <span class="link-number">01</span>
+          <span class="link-text">Home</span>
+          <i class='bx bx-chevron-right'></i>
+        </a>
+        <a href="#about" class="mobile-nav-link" data-link="about">
+          <span class="link-number">02</span>
+          <span class="link-text">About</span>
+          <i class='bx bx-chevron-right'></i>
+        </a>
+        <a href="#projects" class="mobile-nav-link" data-link="projects">
+          <span class="link-number">03</span>
+          <span class="link-text">Projects</span>
+          <i class='bx bx-chevron-right'></i>
+        </a>
+        <a href="#skills" class="mobile-nav-link" data-link="skills">
+          <span class="link-number">04</span>
+          <span class="link-text">Skills</span>
+          <i class='bx bx-chevron-right'></i>
+        </a>
+        <a href="#contact" class="mobile-nav-link" data-link="contact">
+          <span class="link-number">05</span>
+          <span class="link-text">Contact</span>
+          <i class='bx bx-chevron-right'></i>
+        </a>
+      </div>
+
+      <div class="mobile-nav-footer">
+        <a class="btn-mobile-download" id="downloadResumeMobile">
+          <i class='bx bx-download'></i>
+          Download Resume
+        </a>
+      </div>
     </div>
   </div>
-</div>
 
   <!-- MAIN CONTENT -->
   <main>
@@ -425,37 +425,42 @@
           <div class="project-card project-item" data-aos="fade-up" data-aos-delay="300">
             <div class="project-image">
               <div class="image-wrapper">
-                <img src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?auto=format&fit=crop&w=600&q=80"
-                  alt="Finance App">
+                <img src="assets/images/elite_auto.png" alt="Elite Auto Car Booking Website">
               </div>
 
               <div class="project-overlay">
                 <div class="project-links">
-                  <a href="#" class="project-link"><i class="bx bx-link-external"></i></a>
-                  <a href="#" class="project-link"><i class="bx bxl-github"></i></a>
+                  <a href="#" class="project-link">
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="bx bxl-github"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
             <div class="project-content">
               <div class="project-meta">
-                <span class="project-date">2023</span>
-                <span class="project-category">Finance</span>
+                <span class="project-date">2024</span>
+                <span class="project-category">Automobile</span>
               </div>
 
-              <h3 class="project-title">Smart Finance Dashboard</h3>
+              <h3 class="project-title">Elite Auto</h3>
 
               <p class="project-description">
-                Financial tracking app with analytics, budgeting, and reports.
+                Premium car booking website allowing users to explore luxury vehicles,
+                view details, and book cars seamlessly with a modern UI experience.
               </p>
 
               <div class="project-tech">
-                <span class="tech-tag">Flutter</span>
-                <span class="tech-tag">SQL</span>
-                <span class="tech-tag">Charts</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
               </div>
             </div>
           </div>
+
 
           <!-- Project 4 (Hidden initially) -->
           <div class="project-card project-item" data-aos="fade-up" data-aos-delay="400">
@@ -760,7 +765,7 @@
                   </div>
                   <div>
                     <h4>Email</h4>
-                    <a href="mailto:syam@example.com">syamthecreator@gmail.com</a>
+                    <a href="mailto:syamthecreator@gmail.com">syamthecreator@gmail.com</a>
                   </div>
                 </div>
 
