@@ -474,6 +474,7 @@ body.light .bx-moon {
   bottom: 50%;
   transform: translateY(50%) rotate(-45deg);
 }
+
 /* ================= MOBILE NAVIGATION ================= */
 .mobile-nav {
   position: fixed;
@@ -493,12 +494,11 @@ body.light .bx-moon {
 }
 
 .mobile-nav-content {
-  width: 100%;
+  height: 100dvh;
   height: 100%;
   padding: 24px;
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* 🔥 Prevent content overflow */
 }
 
 .mobile-nav-header {
@@ -507,7 +507,6 @@ body.light .bx-moon {
   justify-content: space-between;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--border);
-  flex-shrink: 0; /* 🔥 Don't shrink */
 }
 
 .close-menu {
@@ -530,15 +529,11 @@ body.light .bx-moon {
   color: white;
 }
 
-/* 🔥 Fixed height for links to ensure button is visible */
 .mobile-nav-links {
-  flex: 0 0 auto; /* 🔥 Don't grow or shrink */
-  max-height: 60vh; /* 🔥 Limit height */
-  padding: 20px 0;
-  display: flex;
-  flex-direction: column;
+  flex: 1;
+  padding: 40px 0;
+   overflow-y: auto;
   gap: 8px;
-  overflow-y: auto; /* 🔥 Scroll only links if needed */
 }
 
 .mobile-nav-link {
@@ -551,7 +546,6 @@ body.light .bx-moon {
   border-radius: var(--radius-md);
   transition: var(--transition);
   border: 1px solid transparent;
-  flex-shrink: 0; /* 🔥 Don't shrink links */
 }
 
 .mobile-nav-link:hover,
@@ -582,13 +576,16 @@ body.light .bx-moon {
   transform: translateX(4px);
 }
 
-/* 🔥 Footer pushed to bottom, always visible */
+
 .mobile-nav-footer {
-  margin-top: auto;
-  padding: 20px 0 0;
+  position: sticky;
+  bottom: 0;
+  background: var(--surface);
+  padding-top: 16px;
   border-top: 1px solid var(--border);
-  flex-shrink: 0;
 }
+
+
 .btn-mobile-download {
   display: flex;
   align-items: center;
@@ -602,6 +599,8 @@ body.light .bx-moon {
   font-weight: 500;
   transition: var(--transition);
   width: 100%;
+  margin-top: auto;
+  /* 🔥 Pushes to bottom */
 }
 
 .btn-mobile-download:hover {
@@ -609,50 +608,6 @@ body.light .bx-moon {
   box-shadow: var(--shadow-md);
 }
 
-/* 🔥 Custom scrollbar for links */
-.mobile-nav-links::-webkit-scrollbar {
-  width: 4px;
-}
-
-.mobile-nav-links::-webkit-scrollbar-track {
-  background: var(--surface-light);
-  border-radius: 10px;
-}
-
-.mobile-nav-links::-webkit-scrollbar-thumb {
-  background: var(--accent);
-  border-radius: 10px;
-}
-
-/* 🔥 Responsive adjustments */
-@media (max-height: 700px) {
-  .mobile-nav-links {
-    max-height: 50vh;
-  }
-}
-
-@media (max-height: 600px) {
-  .mobile-nav-links {
-    max-height: 45vh;
-  }
-}
-
-@media (max-height: 500px) {
-  .mobile-nav-links {
-    max-height: 40vh;
-    padding: 15px 0;
-    gap: 6px;
-  }
-  
-  .mobile-nav-link {
-    padding: 14px 18px;
-    font-size: 15px;
-  }
-  
-  .link-number {
-    font-size: 13px;
-  }
-}
 
 /* ================= HERO SECTION ================= */
 .hero {
@@ -1912,36 +1867,6 @@ body.light .bx-moon {
   .mobile-nav-link {
     padding: 14px 16px;
     font-size: 15px;
-  }
-}
-
-@media (max-height: 700px) {
-  .mobile-nav-links {
-    flex: 1;
-    max-height: calc(100vh - 200px); /* Adjust based on header/footer height */
-  }
-  
-  .mobile-nav-footer {
-    padding-top: 15px;
-  }
-  
-  .btn-mobile-download {
-    padding: 14px 20px;
-    font-size: 14px;
-  }
-}
-
-@media (max-height: 500px) {
-  .mobile-nav-links {
-    max-height: calc(100vh - 180px);
-  }
-  
-  .mobile-nav-link {
-    padding: 12px 16px;
-  }
-  
-  .mobile-nav-header {
-    padding-bottom: 15px;
   }
 }
 
