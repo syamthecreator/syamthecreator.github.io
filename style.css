@@ -208,8 +208,6 @@ body.light .header {
   font-size: 24px;
 }
 
-
-
 .logo-text {
   display: flex;
   flex-direction: column;
@@ -1726,9 +1724,10 @@ body.light .bx-moon {
     padding: 0;
     justify-content: center;
   }
-.mobile-nav.active .btn-mobile-download {
-  display: flex;
-}
+
+  .mobile-nav.active .btn-mobile-download {
+    display: flex;
+  }
 
 
 }
@@ -1799,7 +1798,6 @@ body.light .bx-moon {
     --header-height: 64px;
     --section-spacing: 64px;
   }
-
 
   .header-content {
     gap: 12px;
