@@ -530,7 +530,8 @@ body.light .bx-moon {
 }
 
 .mobile-nav-links {
-  padding: 24px 0 110px; /* space for fixed footer */
+  padding: 24px 0 110px;
+  /* space for fixed footer */
   overflow-y: auto;
 }
 
@@ -1723,6 +1724,9 @@ body.light .bx-moon {
     padding: 0;
     justify-content: center;
   }
+
+
+
 }
 
 /* ===================================================== */
@@ -1863,6 +1867,14 @@ body.light .bx-moon {
   .mobile-nav-link {
     padding: 14px 16px;
     font-size: 15px;
+  }
+
+  /* 🔥 FORCE logo text to show inside mobile menu */
+  .mobile-nav .logo-text {
+    display: flex !important;
+    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
   }
 }
 
