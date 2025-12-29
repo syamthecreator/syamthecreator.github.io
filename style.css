@@ -1796,10 +1796,6 @@ body.light .bx-moon {
     --section-spacing: 64px;
   }
 
-  .logo-text {
-    display: none;
-  }
-
   .header-content {
     gap: 12px;
   }
@@ -1869,13 +1865,7 @@ body.light .bx-moon {
     font-size: 15px;
   }
 
-  /* 🔥 FORCE logo text to show inside mobile menu */
-  .mobile-nav .logo-text {
-    display: flex !important;
-    flex-direction: column;
-    opacity: 1;
-    visibility: visible;
-  }
+
 }
 
 /* ===================================================== */
