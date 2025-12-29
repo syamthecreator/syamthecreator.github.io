@@ -577,7 +577,7 @@ body.light .bx-moon {
   transform: translateX(4px);
 }
 
-.btn-mobile-download {
+/* .btn-mobile-download {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -594,7 +594,35 @@ body.light .bx-moon {
 .btn-mobile-download:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
+} */
+
+.mobile-nav-footer {
+  flex-shrink: 0; /* 🔥 Keep footer at bottom */
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
 }
+
+.btn-mobile-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 24px;
+  background: var(--gradient);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  transition: var(--transition);
+  width: 100%;
+  margin-top: auto; /* 🔥 Pushes to bottom */
+}
+
+.btn-mobile-download:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
 
 /* ================= HERO SECTION ================= */
 .hero {
