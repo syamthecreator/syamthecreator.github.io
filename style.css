@@ -208,12 +208,16 @@ body.light .header {
   font-size: 24px;
 }
 
+/* 🔒 Force logo text visible in ALL views */
 .logo-text {
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+    flex-direction: column;
   line-height: 1;
   font-weight: 700;
 }
+
 
 .logo-primary {
   font-size: 20px;
