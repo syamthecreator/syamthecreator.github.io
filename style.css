@@ -584,12 +584,11 @@ body.light .bx-moon {
 
 /* 🔥 Footer pushed to bottom, always visible */
 .mobile-nav-footer {
-  margin-top: auto; /* 🔥 Push to bottom */
-  padding-top: 20px;
+  margin-top: auto;
+  padding: 20px 0 0;
   border-top: 1px solid var(--border);
-  flex-shrink: 0; /* 🔥 Don't shrink */
+  flex-shrink: 0;
 }
-
 .btn-mobile-download {
   display: flex;
   align-items: center;
@@ -1913,6 +1912,36 @@ body.light .bx-moon {
   .mobile-nav-link {
     padding: 14px 16px;
     font-size: 15px;
+  }
+}
+
+@media (max-height: 700px) {
+  .mobile-nav-links {
+    flex: 1;
+    max-height: calc(100vh - 200px); /* Adjust based on header/footer height */
+  }
+  
+  .mobile-nav-footer {
+    padding-top: 15px;
+  }
+  
+  .btn-mobile-download {
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-height: 500px) {
+  .mobile-nav-links {
+    max-height: calc(100vh - 180px);
+  }
+  
+  .mobile-nav-link {
+    padding: 12px 16px;
+  }
+  
+  .mobile-nav-header {
+    padding-bottom: 15px;
   }
 }
 
